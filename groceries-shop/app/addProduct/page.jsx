@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 export default function AddProduct() {
   const [name, setName] = useState("");
-  const [price, setPrice] = useState("");
+  const [price, setPrice] = useState(0);
 
   const router = useRouter();
 
@@ -27,6 +27,7 @@ export default function AddProduct() {
       });
 
       if (res.ok) {
+        router.refresh();
         router.push("/");
       } else {
         throw new Error("Failed to create a product");
@@ -50,7 +51,7 @@ export default function AddProduct() {
         onChange={(e) => setPrice(e.target.value)}
         value={price}
         className="border border-slate-500 px-8 py-2"
-        type="text"
+        type="number"
         placeholder="Product Price"
       />
 

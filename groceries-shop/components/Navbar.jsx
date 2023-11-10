@@ -6,6 +6,9 @@ export default function Navbar() {
       <Link className="bg-white p-2" href={"/"}>
         Shop
       </Link>
+      <Link className="bg-white p-2" href={"/addDeal"}>
+        Add Deal
+      </Link>
       <Link className="bg-white p-2" href={"/addProduct"}>
         Add Product
       </Link>

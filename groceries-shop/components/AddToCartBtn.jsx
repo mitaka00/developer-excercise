@@ -1,12 +1,18 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-
 export default function AddToCartBtn({ id }) {
-  const router = useRouter();
+
+  function addToCart() {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if(cart===null){
+      cart=new Array();
+    }
+    cart.push(id);
+    localStorage.setItem("cart",JSON.stringify(cart));
+  };
 
   return (
-    <button className="bg-white p-2">
+    <button onClick={addToCart} className="bg-white p-2">
       Add to Cart
     </button>
   );
