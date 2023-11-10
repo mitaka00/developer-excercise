@@ -18,6 +18,6 @@ Next JS and MongoDB
 * Your application is running on `localhost:3000`
 
 ##Images
-[add deal form](addDeal.png)
-[cart page](cart.png)
-[home page](home.png)
+![add deal form](addDeal.png)
+![cart page](cart.png)
+![home page](home.png)
