@@ -1,6 +1,6 @@
 # Groceries Shop
 
-This is a web application that allows an user to manage an online grocery shop. User can add, edit and delete products/deals. Products can be added to the cart and total sum of the products can be calculated.
+This is a web application that allows an user to manage online grocery shop. User can add, edit and delete products/deals. Products can be added to the cart and total sum of the products can be calculated.
 
 ## Technologies
 Next JS and MongoDB
@@ -17,7 +17,7 @@ Next JS and MongoDB
 * Run the project with `npm run dev`
 * Your application is running on `localhost:3000`
 
-##Images
+## Images
 ![add deal form](addDeal.png)
 ![cart page](cart.png)
 ![home page](home.png)
